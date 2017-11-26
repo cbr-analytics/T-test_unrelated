@@ -1,0 +1,9 @@
+# T-Test for two unrelated groups
+
+G1 <- c(11,22,33,44,55,66,77)
+G2 <- c(21,32,43,54,65,76,2)
+
+TtestResult <- t.test(G1, G2, var.equal = TRUE)
+
+summary(TtestResult)
+TtestResult
